@@ -1,3 +1,13 @@
+#nav a{
+  display: inline;
+  width: 1000px;
+  padding-left: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
 #intro {
   display: flex;
   flex-direction: column;
@@ -12,18 +22,22 @@ canvas {
 }
 
 .intro-subtitle {
-  margin-top: -36px;
-  font-family: "NTR", sans-serif;
+  margin-top: -30px;
   color: white;
   font-weight: 300;
   font-size: 55px;
+  font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+border-radius: 10px;
+line-height: 69px;
 }
 
 .intro-desc {
   color:white;
   font-family: "NTR", sans-serif;
   font-size: 20px;
-  max-width: 55%;
+  max-width: 60%;
   padding-bottom: 50px;
   padding-top: 30px;
 }
@@ -45,37 +59,58 @@ b {
   font-size: 17px;
 }
 
-@media only screen and (max-width: 600px) {
-  #gazi-model {
-    display: none;
+@media only screen and (max-width: 700px) {
+  /*before 700px*/
+  #nav a{
+    display: inline;
+    width: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
   }
-
   #intro {
     min-height: unset;
     padding-left: unset;
     margin: 0;
     align-items: center;
   }
-
-  .intro-title {
-    font-size: 46px;
-  }
-  .intro-name {
-    font-size: 46px;
-  }
-
-  .Typist {
-    font-size: 36px;
-  }
-
   .intro-subtitle {
     margin: 0;
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
   }
 
   .intro-desc {
     font-size: 18px;
+    text-align: center;
+    max-width: unset;
+    padding-bottom: 40px;
+  }
+
+  .intro-contact {
+    font-size: 16px;
+    align-self: center;
+    margin-left: 30%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #intro {
+    min-height: unset;
+    padding-left: unset;
+    margin: 0;
+    align-items: center;
+  }
+  .intro-subtitle {
+    margin: 0;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .intro-desc {
+    font-size: 30px;
     text-align: center;
     max-width: unset;
     padding-bottom: 40px;

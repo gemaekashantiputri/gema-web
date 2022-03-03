@@ -1,0 +1,22 @@
+.sidebar-logos {
+    padding-top: -100px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 90px;
+    margin-top: -700px;
+    padding-left: 290px;
+}
+a {
+  text-decoration: none !important;
+  color: #FF4C29;
+}
+@media only screen and (max-width: 700px) {
+  .sidebar-logos {
+    padding-left: 300px;
+    margin-top: 60px;
+    display: flex;
+    
+  }
+}
