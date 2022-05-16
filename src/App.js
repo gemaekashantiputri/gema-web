@@ -4,6 +4,9 @@ import Landing from '../src/components/landing';
 import Sidebar from '../src/components/sidebar-logos';
 import About from '../src/components/about';
 import Experience from './components/experience';
+import Work from './components/work';
+import Design from './components/design';
+
 
 function App() {
   return (
@@ -13,9 +16,9 @@ function App() {
           <Sidebar></Sidebar>
         </Landing>
         <About>
-
         </About>
         <Experience></Experience>
+        <Work></Work>
       </div>
     </div>
   );

@@ -1,14 +1,47 @@
 #experience {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding-left: 15%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  min-height: 100vh;
+  margin-bottom: 100px;
+}
+
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.check-list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 5px;
+  height: 11px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #FF4C29;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
 }
 
 .joblist-job-title {
   font-family: "NTR", sans-serif;
   font-size: 28px;
   font-weight: bold;
-  color: var(--lightest-slate);
+  color: white;
+  margin-bottom: 2%;
 }
 
 .joblist-job-company {
@@ -24,39 +57,22 @@
   color: var(--slate);
 }
 
-#vertical-tabpanel {
-  margin-top: -28px;
-  padding-left: 25px;
-}
-
-.MuiTab-wrapper {
-  font-size: 16px;
-  text-align: left;
-  align-items: flex-start !important;
-  font-family: "NTR", sans-serif;
-}
-
-.MuiButtonBase-root {
-  outline: none !important;
-  color: white !important;
-}
-
-.PrivateTabIndicator-colorSecondary-5 {
-  background-color: white !important;
-}
-.jss5 {
-  background-color: white !important;
-}
-.makeStyles-tabs-2 {
-  border-right: 1px solid navy !important;
-}
-.MuiButtonBase-root:focus {
-  color: white !important;
-}
 
 ul {
   list-style: none;
   margin-left: -40px;
+}
+
+.experience-subtitle {
+  margin-top: -30px;
+  color: white;
+  font-size: 55px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  border-radius: 10px;
+  line-height: 69px;
+  margin-bottom: 15px;
 }
 
 .job-description li::before {
@@ -64,6 +80,22 @@ ul {
   color: white;
   position: absolute;
   left: 0;
+}
+
+.joblist-job-title li::before {
+  content: "▹    ";
+  color: white;
+  position: absolute;
+  left: 0;
+}
+
+.jobs {
+  content: "▹    ";
+  color: white;
+  position: absolute;
+  padding-left: 2rem;
+  margin-left: 5px;
+  margin-top: -840px;
 }
 
 .job-description li {
@@ -87,29 +119,125 @@ ul {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   #experience {
-    padding-left: unset;
-    padding-right: unset;
-    padding-top: 30%;
-  }
-
-  .jss1 {
-    height: unset !important;
-    flex-direction: column !important;
-  }
-
-  .makeStyles-root-1 {
-    height: unset !important;
-    width: unset;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3%;
+    padding-top: 50%;
+    min-height: 100vh;
+    margin-bottom: 100px;
+  }
+
+  .check-list {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .check-list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+
+  .check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #FF4C29;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
   }
 
   .joblist-job-title {
-    font-size: 22px;
+    font-family: "NTR", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2%;
   }
 
   .joblist-job-company {
-    font-size: 22px;
+    font-family: "NTR", sans-serif;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .joblist-duration {
+    font-family: "NTR", sans-serif;
+    font-size: 18px;
+    color: var(--slate);
+  }
+
+
+  ul {
+    list-style: none;
+    margin-left: -40px;
+  }
+
+  .experience-subtitle {
+    margin-top: -46%;
+    color: white;
+    font-size: 200%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 69px;
+    margin-bottom: 15px;
+  }
+
+  .job-description li::before {
+    content: "▹    ";
+    color: white;
+    position: absolute;
+    left: 0;
+  }
+
+  .joblist-job-title li::before {
+    content: "▹    ";
+    color: white;
+    position: absolute;
+    left: 0;
+  }
+
+  .jobs {
+    content: "▹    ";
+    color: white;
+    position: absolute;
+    padding-left: 2rem;
+    margin-left: 5px;
+    margin-top: -290%;
+  }
+
+  .job-description li {
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    color: white;
+  }
+
+  .job-description {
+    padding-top: 24px;
+    max-width: 650px;
+    font-family: "NTR", sans-serif;
+    font-size: 20px;
+  }
+
+  .job-description a,
+  .job-description b {
+    font-size: 19px;
+    font-weight: bold;
   }
 }

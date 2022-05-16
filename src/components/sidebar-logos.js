@@ -15,7 +15,7 @@ const Sidebar = () => {
         <a href="https://github.com/gemaekashantiputri">
           <GitHubIcon style={{ fontSize: 19 }}></GitHubIcon>
         </a>
-        <a href="https://www.linkedin.com/in/gazi-jarin-3644b0172/">
+        <a href="https://www.linkedin.com/in/gemaekashantiputri/">
           <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
         </a>
       </div>

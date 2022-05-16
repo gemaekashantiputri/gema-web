@@ -1,137 +1,36 @@
 import React from 'react';
 import '../styles/experience.css';
-import FadeInSection from "./FadeInSection";
-import PropTypes from "prop-types";
-import { makeStyles } from "@material-ui/core/styles";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-
-const isHorizontal = window.innerWidth < 600;
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  if (isHorizontal) {
-    return (
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`full-width-tabpanel-${index}`}
-        aria-labelledby={`full-width-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
-          <Box p={3}>
-            <Typography>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    );
-  } else {
-    return (
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`vertical-tabpanel`}
-        {...other}
-      >
-        {value === index && (
-          <Box p={3}>
-            <Typography>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    );
-  }
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired
-};
-
-function a11yProps(index) {
-  if (isHorizontal) {
-    return {
-      id: `full-width-tab-${index}`,
-      "aria-controls": `full-width-tabpanel-${index}`
-    };
-  } else {
-    return {
-      id: `vertical-tab-${index}`
-    };
-  }
-}
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: "theme.palette.background.paper",
-    display: "flex",
-    height: 300
-  },
-  tabs: {
-    borderRight: `1px solid ${theme.palette.divider}`
-  }
-}));
 
 const Experience = () => {
-  const classes = useStyles();
-  const [value, setValue] = React.useState(0);
-
-  const experienceItems = {
-    "Universitas Muhammadiyah Purwokerto": {
-      jobTitle: "Laboratory Assistant @",
-      duration: "July 2020 - December 2020",
-      desc: [
-        "make report from class Informatic Engineering"
-      ]
-    }
-  };
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   return (
-    <div id="experience">
-      <div className={classes.root}>
-        <Tabs
-          orientation={!isHorizontal ? "vertical" : null}
-          variant={isHorizontal ? "fullWidth" : "scrollable"}
-          value={value}
-          onChange={handleChange}
-          className={classes.tabs}
-        >
-          {Object.keys(experienceItems).map((key, i) => (
-            <Tab label={isHorizontal ? `0${i}.` : key} {...a11yProps(i)} />
-          ))}
-        </Tabs>
-        {Object.keys(experienceItems).map((key, i) => (
-          <TabPanel value={value} index={i}>
-            <span className="joblist-job-title">
-              {experienceItems[key]["jobTitle"] + " "}
-            </span>
-            <span className="joblist-job-company">{key}</span>
-            <div className="joblist-duration">
-              {experienceItems[key]["duration"]}
+    <>
+      <div id="experience">
+        <div className="experience-subtitle">#Experience</div>
+        <ul class="jobs">
+          <li>
+            <div className='joblist-job-title'>
+              <li>Learner @ Kampus Merdeka</li>
             </div>
-            <ul className="job-description">
-              {experienceItems[key]["desc"].map(function (descItem, i) {
-                return (
-                  <FadeInSection delay={`${i + 1}00ms`}>
-                    <li key={i}>{descItem}</li>
-                  </FadeInSection>
-                );
-              })}
-            </ul>
-          </TabPanel>
-        ))}
+            <div className='joblist-duration'>August 2021 - January 2022</div>
+            <div className='job-description'>
+              <li>Independent Studies are short courses to master cross-departmental applied knowledge from experts in their fields from Kampus Merdeka. I signed up for independent study of Front-End Web Developer and Back-End at Dicoding Indonesia. learn about website development from both front-end and back-end development. also gained dicoding certificate</li>
+            </div>
+          </li>
+          <li>
+            <div className='joblist-job-title'>
+              <li>Laboratory Assistant @ Universitas Muhammadiyah Purwokerto</li>
+            </div>
+            <div className='joblist-duration'>July 2020 - September 2021</div>
+            <div className='job-description'>
+              <li>make report form application computer class for first-year student</li>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
+    </>
   );
-};
+}
 
 export default Experience
+

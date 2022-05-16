@@ -1,13 +1,19 @@
-#nav a{
+#nav a {
   display: inline;
-  width: 1000px;
-  padding-left: 30px;
+  width: 3000px;
+  padding-left: 35px;
   flex-direction: row;
   justify-content: space-between;
   color: white;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
 }
+
+#nav {
+  position: fixed;
+  padding-left: 850px;
+}
+
 #intro {
   display: flex;
   flex-direction: column;
@@ -22,19 +28,14 @@ canvas {
 }
 
 .intro-subtitle {
-  margin-top: -30px;
+  font-family: "NTR", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
   color: white;
-  font-weight: 300;
-  font-size: 55px;
-  font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-border-radius: 10px;
-line-height: 69px;
 }
 
 .intro-desc {
-  color:white;
+  color: white;
   font-family: "NTR", sans-serif;
   font-size: 20px;
   max-width: 60%;
@@ -42,83 +43,103 @@ line-height: 69px;
   padding-top: 30px;
 }
 
-.intro-contact {
-  font-size: 22px;
-  font-family: "NTR", sans-serif;
-  padding: 10px 20px;
-  cursor: pointer;
-  border: 1px solid white;
-  border-radius: 4px;
-}
-
-.intro-contact:hover {
-  background-color: var(--lightest-navy);
-}
-
 b {
   font-size: 17px;
 }
 
 @media only screen and (max-width: 700px) {
+
   /*before 700px*/
-  #nav a{
+  #nav a {
     display: inline;
-    width: 600px;
+    width: 3000px;
+    padding-left: 10px;
     flex-direction: row;
     justify-content: space-between;
     color: white;
     text-decoration: none;
-    font-size: 15px;
-    text-align: center;
+    font-size: 25px;
   }
+
+  #nav {
+    position: fixed;
+    padding-left: 700px;
+  }
+
   #intro {
-    min-height: unset;
-    padding-left: unset;
-    margin: 0;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15%;
+    padding-top: 20%;
+    min-height: 100vh;
   }
+
+  canvas {
+    width: 200px !important;
+  }
+
   .intro-subtitle {
-    margin: 0;
-    font-size: 20px;
-    text-align: center;
+    font-family: "NTR", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
   }
 
   .intro-desc {
-    font-size: 18px;
-    text-align: center;
-    max-width: unset;
-    padding-bottom: 40px;
-  }
-
-  .intro-contact {
-    font-size: 16px;
-    align-self: center;
-    margin-left: 30%;
+    color: white;
+    font-family: "NTR", sans-serif;
+    font-size: 20px;
+    max-width: 60%;
+    padding-bottom: 50px;
+    padding-top: 30px;
   }
 }
+
 @media only screen and (max-width: 400px) {
-  #intro {
-    min-height: unset;
-    padding-left: unset;
-    margin: 0;
-    align-items: center;
+
+  /*before 400px*/
+  #nav a {
+    display: inline;
+    width: 3000px;
+    padding-left: 7%;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
   }
+
+  #nav {
+    position: fixed;
+    padding-left: 3%;
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3%;
+    padding-top: 10%;
+    min-height: 100vh;
+  }
+
   .intro-subtitle {
-    margin: 0;
-    font-size: 60px;
-    text-align: center;
+    font-family: "NTR", sans-serif;
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
+    width: 15%;
   }
 
   .intro-desc {
-    font-size: 30px;
-    text-align: center;
-    max-width: unset;
-    padding-bottom: 40px;
+    color: white;
+    font-family: "NTR", sans-serif;
+    font-size: 20px;
+    max-width: 60%;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    width: 16%;
   }
 
-  .intro-contact {
-    font-size: 16px;
-    align-self: center;
-    margin-left: 30%;
-  }
 }
