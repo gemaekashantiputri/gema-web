@@ -9,10 +9,6 @@ const Work = () => {
     <>
       <div id="work">
         <div className="work-subtitle">#Work</div>
-        <div className='button'>
-          <a href="#work" class="btn1">Program</a>
-          <a href="#design" class="btn2">Design</a>
-        </div>
         <div className="project-container">
           <ul className='projects-grid'>
             <li className='projects-card'>

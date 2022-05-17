@@ -1,0 +1,37 @@
+<Router>
+      <div>
+        <Landing>
+          <Sidebar></Sidebar>
+        </Landing>
+        <About>
+        </About>
+        <Experience></Experience>
+        <Work></Work>
+      </div>
+      <Routes>
+        <div>
+          <Route path='/design' element={<Design />} />
+          <Route path='/work' element={<Work />} />
+        </div>
+      </Routes>
+    </Router>
+    <BrowserRouter>
+      <Routes>
+
+        <Route exact path='/'>
+          <div className="App">
+            <div id="content">
+              <Landing>
+                <Sidebar></Sidebar>
+              </Landing>
+              <About>
+              </About>
+              <Experience></Experience>
+              <Work></Work>
+            </div>
+          </div>
+        </Route>
+        <Route path="/design" element={<Design />} />
+
+      </Routes>
+    </BrowserRouter >

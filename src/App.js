@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
 import Landing from '../src/components/landing';
 import Sidebar from '../src/components/sidebar-logos';
@@ -7,10 +8,9 @@ import Experience from './components/experience';
 import Work from './components/work';
 import Design from './components/design';
 
-
 function App() {
   return (
-    <div className="App">
+    <><div className="App">
       <div id="content">
         <Landing>
           <Sidebar></Sidebar>
@@ -21,6 +21,7 @@ function App() {
         <Work></Work>
       </div>
     </div>
+    </>
   );
 }
 

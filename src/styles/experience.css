@@ -42,19 +42,14 @@
   font-weight: bold;
   color: white;
   margin-bottom: 2%;
+  margin-top: 45px;
 }
 
-.joblist-job-company {
-  font-family: "NTR", sans-serif;
-  font-size: 28px;
-  color: white;
-  font-weight: bold;
-}
 
 .joblist-duration {
   font-family: "NTR", sans-serif;
-  font-size: 18px;
-  color: var(--slate);
+  font-size: 24px;
+  font-weight: bold;
 }
 
 
@@ -102,15 +97,15 @@ ul {
   position: relative;
   padding-left: 30px;
   padding-bottom: 16px;
-  font-size: 18px;
+  font-size: 25px;
   color: white;
 }
 
 .job-description {
   padding-top: 24px;
-  max-width: 650px;
+  width: 1500px;
   font-family: "NTR", sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .job-description a,
@@ -125,7 +120,7 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 3%;
-    padding-top: 50%;
+    padding-top: 48%;
     min-height: 100vh;
     margin-bottom: 100px;
   }
@@ -164,6 +159,8 @@ ul {
     font-weight: bold;
     color: white;
     margin-bottom: 2%;
+    width: 75%;
+    margin-top: 20%;
   }
 
   .joblist-job-company {
@@ -186,7 +183,7 @@ ul {
   }
 
   .experience-subtitle {
-    margin-top: -46%;
+    margin-top: -43%;
     color: white;
     font-size: 200%;
     font-family: Poppins;
@@ -217,7 +214,7 @@ ul {
     position: absolute;
     padding-left: 2rem;
     margin-left: 5px;
-    margin-top: -290%;
+    margin-top: -159%;
   }
 
   .job-description li {
@@ -230,7 +227,7 @@ ul {
 
   .job-description {
     padding-top: 24px;
-    max-width: 650px;
+    width: 95%;
     font-family: "NTR", sans-serif;
     font-size: 20px;
   }
