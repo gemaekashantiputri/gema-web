@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/intro.css';
 import Sidebar from './sidebar-logos';
 
-const Landing = () => {
+const Intro = () => {
 
   return (
     <>
@@ -23,4 +23,4 @@ const Landing = () => {
   );
 }
 
-export default Landing
+export default Intro
