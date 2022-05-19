@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Intro from './components/intro';
-import Sidebar from '../src/components/sidebar-logos';
-import About from '../src/components/about';
-import Experience from './components/experience';
-import Work from './components/work';
+import Intro from './components/intro.js';
+import Sidebar from '../src/components/sidebar-logos.js';
+import About from '../src/components/about.js';
+import Experience from './components/experience.js';
+import Work from './components/work.js';
 
 function App() {
   return (
