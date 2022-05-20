@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/intro.css';
+import styles from "../styles/intro.css";
 import Sidebar from './sidebar-logos';
 
 const Intro = () => {
