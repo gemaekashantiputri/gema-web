@@ -31,7 +31,12 @@ a {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 90px;
-    margin-top: -57%;
+    margin-top: -10%;
     padding-left: 3%;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: #FF4C29;
   }
 }
