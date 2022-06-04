@@ -24,7 +24,6 @@ html {
   flex-direction: row;
   width: max-content;
   height: max-content;
-  height: 4000px;
   /* padding: 36px 76px; */
 }
 
@@ -35,7 +34,7 @@ html {
 
 #content {
   /* padding: 80px 200px; */
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
 }

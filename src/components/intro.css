@@ -94,7 +94,7 @@ b {
   /*before 400px*/
   #nav a {
     display: inline;
-    width: 3000px;
+    width: 100%;
     padding-left: 7%;
     flex-direction: row;
     justify-content: space-between;
