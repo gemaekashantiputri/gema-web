@@ -21,14 +21,13 @@
 .about-desc {
   color: white;
   font-size: 25px;
-  max-width: 60%;
   padding-bottom: 50px;
   padding-top: 30px;
   font-family: "NTR", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 43px;
-
+  width: 900px
 }
 
 
@@ -51,7 +50,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 3%;
-    padding-top: 8%;
+    padding-top: 25%;
     min-height: 100vh;
   }
 
@@ -69,7 +68,7 @@
   .about-desc {
     color: white;
     font-size: 20px;
-    width: 25%;
+    width: 80%;
     padding-bottom: 50px;
     padding-top: 30px;
     font-family: "NTR", sans-serif;
