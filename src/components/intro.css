@@ -95,7 +95,7 @@ b {
   #nav a {
     display: inline;
     width: 100%;
-    padding-left: 7%;
+    padding-left: 4%;
     flex-direction: row;
     justify-content: space-between;
     color: white;
