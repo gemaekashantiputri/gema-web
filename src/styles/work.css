@@ -71,7 +71,13 @@
   font-size: 16px;
   padding-bottom: -100px;
 }
+.work-img img {
+  width: 95%;
+  margin-bottom: 40px;
+  margin-left: 3%;
+  border-radius: 10px;
 
+}
 @media only screen and (max-width: 400px) {
   #work {
     display: flex;
@@ -83,7 +89,7 @@
   }
 
   .work-subtitle {
-    margin-top: 20%;
+    margin-top: 5%;
     color: white;
     font-size: 55px;
     font-family: Poppins;
@@ -459,5 +465,11 @@
     font-style: normal;
     font-weight: bold;
     border-radius: 10px;
+  }
+  .work-img img {
+    width: 95%;
+    margin-bottom: 40px;
+    margin-left: 5%;
+
   }
 }
