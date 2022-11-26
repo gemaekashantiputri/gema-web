@@ -42,7 +42,6 @@
   font-weight: bold;
   color: white;
   margin-bottom: 2%;
-  margin-top: 45px;
 }
 
 
@@ -62,12 +61,11 @@ ul {
   margin-top: -30px;
   color: white;
   font-size: 55px;
-  font-family: Poppins;
+  font-family: "NTR", sans-serif;
   font-style: normal;
   font-weight: bold;
   border-radius: 10px;
   line-height: 69px;
-  margin-bottom: 15px;
 }
 
 .job-description li::before {
@@ -76,7 +74,12 @@ ul {
   position: absolute;
   left: 0;
 }
-
+.joblist-job-company {
+  font-family: "NTR", sans-serif;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+}
 .joblist-job-title li::before {
   content: "▹    ";
   color: white;
@@ -114,6 +117,129 @@ ul {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 800px) {
+  #experience {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15%;
+    padding-top: 48%;
+    min-height: 100vh;
+    margin-bottom: 100px;
+    margin-top: -300px;
+  }
+
+  .check-list {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .check-list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+
+  .check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #FF4C29;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+  }
+
+  .joblist-job-title {
+    font-family: "NTR", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2%;
+    width: 75%;
+    margin-top: 20%;
+  }
+
+  .joblist-job-company {
+    font-family: "NTR", sans-serif;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .joblist-duration {
+    font-family: "NTR", sans-serif;
+    font-size: 18px;
+    color: var(--slate);
+  }
+
+
+  ul {
+    list-style: none;
+    margin-left: -40px;
+  }
+
+  .experience-subtitle {
+    margin-top: -40%;
+    color: white;
+    font-size: 200%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+    .job-description li::before {
+      content: "▹    ";
+      color: white;
+      position: absolute;
+      left: 0;
+    }
+  
+    .joblist-job-title li::before {
+      content: "▹    ";
+      color: white;
+      position: absolute;
+      left: 0;
+    }
+  
+    .jobs {
+      content: "▹    ";
+      color: white;
+      position: absolute;
+      padding-left: 2rem;
+      margin-left: 5px;
+      margin-top: -45%;
+    }
+  
+    .job-description li {
+      position: relative;
+      padding-left: 30px;
+      padding-bottom: 16px;
+      font-size: 18px;
+      color: white;
+    }
+  
+    .job-description {
+      padding-top: 24px;
+      width: 95%;
+      font-family: "NTR", sans-serif;
+      font-size: 20px;
+    }
+  
+    .job-description a,
+    .job-description b {
+      font-size: 19px;
+      font-weight: bold;
+    }
+}
 @media only screen and (max-width: 400px) {
   #experience {
     display: flex;
@@ -214,7 +340,7 @@ ul {
     position: absolute;
     padding-left: 2rem;
     margin-left: 5px;
-    margin-top: -5%;
+    margin-top: -28%;
   }
 
   .job-description li {

@@ -13,11 +13,19 @@ a {
   text-decoration: none !important;
   color: #FF4C29;
 }
-
 @media only screen and (max-width: 700px) {
   .sidebar-logos {
     padding-left: 300px;
     margin-top: 60px;
+    display: flex;
+
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .sidebar-logos {
+    padding-left: 15%;
+    margin-top: -35%;
     display: flex;
 
   }

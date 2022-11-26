@@ -49,7 +49,18 @@ html {
   background: var(--lightest-navy);
   /* WebKit/Blink Browsers */
 }
-
+@media only screen and (min-width: 750px) {
+  .App {
+      background-color: #082032;
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      height: max-content;
+      background-size: cover;
+      background-attachment: fixed;
+      /* padding: 36px 76px; */
+    }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

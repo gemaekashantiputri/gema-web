@@ -11,27 +11,22 @@ const Work = () => {
         <div className="work-subtitle">#Work</div>
         <div className="project-container">
           <ul className='projects-grid'>
-            <li className='projects-card'>
+             <li className='projects-card'>
               <div className='card-header'>
                 <div className='folder-icon'>
                   <FolderOpenRoundedIcon
                     style={{ fontSize: 35 }}
                   ></FolderOpenRoundedIcon>
                 </div>
-                <span className="external-links">
-                  <a className="github-icon" href="https://github.com/gemaekashantiputri/prewedding-web">
-                    <GitHubIcon
-                      style={{
-                        fontSize: 20,
-                        color: "var(--lightest-slate)"
-                      }}
-                    ></GitHubIcon>
-                  </a>
-                </span>
               </div>
-              <div className='card-title'>PreWedding</div>
+              <div className='work-img'>
+                <img src='/assets/thumb.jpg' alt='thumb'/>
+              </div>
+              <div className='card-title'>
+              <a href="https://www.behance.net/gallery/157876395/Re-Design-University-Muhammadiyah-Purwokerto-Attendance">
+              Re-Design University Muhammadiyah Purwokerto Attendance</a></div>
               <div className='card-desc'>prewedding is a website for ordering wedding organizer services with a progress report feature</div>
-              <div className='card-tech'>JavaScript, React</div>
+              <div className='card-tech'>Google Form, Figma</div>
             </li>
           </ul>
         </div>

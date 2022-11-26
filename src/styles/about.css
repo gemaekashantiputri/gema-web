@@ -27,13 +27,12 @@
   font-style: normal;
   font-weight: normal;
   line-height: 43px;
-  width: 900px
+  width: 800px
 }
 
 
 .about-image {
   padding-left: 1200px;
-  margin-top: -150px;
 }
 
 .about-image img {
@@ -42,8 +41,59 @@
   border-radius: 10px;
   box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
   border: 2px solid #ff4c29;
+  margin-left: -50px;
 }
 
+@media only screen and (min-width: 800px) {
+  #about {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 15%;
+      padding-top: 15%;
+      min-height: 100vh;
+    }
+  
+    .about-subtitle {
+      margin-top: -30px;
+      color: white;
+      font-size: 200%;
+      font-family: "NTR", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      border-radius: 10px;
+      line-height: 69px;
+    }
+  
+    .about-desc {
+      color: white;
+      font-size: 20px;
+      width: 50%;
+      padding-bottom: 50px;
+      padding-top: 30px;
+      font-family: "NTR", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 40px;
+  
+    }
+  
+  
+    .about-image {
+      padding-left: -80%;
+      margin-top: 1%;
+    }
+  
+    .about-image img {
+      width: 250%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+      border: 2px solid #ff4c29;
+      margin-top: -50%;
+      margin-left: -20%;
+    }
+  }
 @media only screen and (max-width: 400px) {
   #about {
     display: flex;
@@ -80,7 +130,7 @@
 
 
   .about-image {
-    padding-left: 1%;
+    padding-left: 15%;
     margin-top: 1%;
   }
 

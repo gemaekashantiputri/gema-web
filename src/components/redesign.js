@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/about.css';
+import '../styles/redesign.css';
 
-const About = () => {
+const Redesign = () => {
 
   return (
     <>
@@ -18,4 +18,4 @@ const About = () => {
   );
 }
 
-export default About
+export default Redesign
