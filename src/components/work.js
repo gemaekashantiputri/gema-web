@@ -25,7 +25,7 @@ const Work = () => {
               <div className='card-title'>
               <a href="https://www.behance.net/gallery/157876395/Re-Design-University-Muhammadiyah-Purwokerto-Attendance">
               Re-Design University Muhammadiyah Purwokerto Attendance</a></div>
-              <div className='card-desc'>prewedding is a website for ordering wedding organizer services with a progress report feature</div>
+              <div className='card-desc'>An application for student attendance in each subject at University Muhammadiyah Purwokerto</div>
               <div className='card-tech'>Google Form, Figma</div>
             </li>
           </ul>
