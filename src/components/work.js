@@ -20,10 +20,10 @@ const Work = () => {
                 </div>
               </div>
               <div className='work-img'>
-                <img src='/assets/thumb.jpg' alt='thumb'/>
+                <img src='/assets/overview.jpg' alt='overview'/>
               </div>
               <div className='card-title'>
-              <a href="https://www.behance.net/gallery/157876395/Re-Design-University-Muhammadiyah-Purwokerto-Attendance">
+              <a href="https://www.behance.net/gallery/164829313/Redesign-Attendance-UMP">
               Re-Design University Muhammadiyah Purwokerto Attendance</a></div>
               <div className='card-desc'>An application for student attendance in each subject at University Muhammadiyah Purwokerto</div>
               <div className='card-tech'>Google Form, Figma</div>
