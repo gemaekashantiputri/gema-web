@@ -32,16 +32,31 @@
 
 
 .about-image {
-  padding-left: 1200px;
+  padding-left: 800px;
 }
 
 .about-image img {
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   border-radius: 10px;
   box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
   border: 2px solid #ff4c29;
   margin-left: -50px;
+}
+
+@media (min-width: 2000px) {
+.about-image {
+    padding-left: 80%;
+  }
+
+  .about-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+    border: 2px solid #ff4c29;
+    margin-left: -50px;
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -102,6 +117,7 @@
     padding-left: 3%;
     padding-top: 25%;
     min-height: 100vh;
+    margin-bottom: -150px;
   }
 
   .about-subtitle {

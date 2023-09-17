@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/work.css';
 import FolderOpenRoundedIcon from "@material-ui/icons/FolderOpenRounded";
-import GitHubIcon from "@material-ui/icons/GitHub";
 
 const Work = () => {
 

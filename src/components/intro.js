@@ -15,7 +15,7 @@ const Intro = () => {
     <div id="intro">
       <div className="intro-subtitle">Hi, I'm Gema Eka Shanti Putri</div>
       <div className="intro-desc">
-        UX Designer passionate about creating innovative designs to make things easier. Apart from having a great interest in the research process, I have the ability to Web and android Development
+        UX Designer passionate about creating innovative designs to make it easier to use. Apart from having a great interest in the research process, I have the ability to Web Development
       </div>
     </div>
       <Sidebar></Sidebar>

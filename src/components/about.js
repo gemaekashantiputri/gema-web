@@ -8,7 +8,7 @@ const About = () => {
       <div id="about">
         <div className="about-subtitle">#About</div>
         <div className="about-desc">
-          Fourth-year student majoring in informatics engineering at University Muhammadiyah of Purwokerto. I'm have big interest in UX Design.
+          Fresh graduate of Informatics Engineering student at University Muhammadiyah Purwokerto, Central Java, Indonesia. I currently focus on UX Design
         </div>
         <div className='about-image'>
           <img src='/assets/me.jpeg' alt='gema' />
